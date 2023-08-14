@@ -64,11 +64,11 @@ namespace CasgemMicroservice.IdentityServer
                     {
                         userManager.CreateAsync(new ApplicationUser
                         {
-                            UserName = "gokay01",
-                            Email = "gokay@gmail.com",
-                            NameSurname = "Gokay Acikgz",
-                            City = "Zonguldak"
-                        }, "123456Aa*").Wait();
+                            UserName = "engokhan",
+                            Email = "engokhangok@gmail.com",
+                            NameSurname = "Gokhan Gok",
+                            City = "Ankara"
+                        }, "123456789Aa*").Wait();
                     }
                 }
                 //this new lines end
