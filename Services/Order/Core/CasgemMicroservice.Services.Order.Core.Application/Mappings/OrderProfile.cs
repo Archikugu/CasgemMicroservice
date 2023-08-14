@@ -13,9 +13,9 @@ namespace CasgemMicroservice.Services.Order.Core.Application.Mappings
 	{
 		public OrderProfile()
 		{
-			CreateMap<ResultOrderDto, Ordering>().ReverseMap();
-			CreateMap<CreateOrderDto, Ordering>().ReverseMap();
-			CreateMap<UpdateOrderDto,Ordering>().ReverseMap();
+			CreateMap<ResultOrderingDto, Ordering>().ReverseMap();
+			CreateMap<CreateOrderingDto, Ordering>().ReverseMap();
+			CreateMap<UpdateOrderingDto,Ordering>().ReverseMap();
 		}
 	}
 }
