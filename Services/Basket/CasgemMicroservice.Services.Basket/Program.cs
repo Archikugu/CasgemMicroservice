@@ -33,12 +33,10 @@ builder.Services.AddSingleton<RedisService>(sp =>
 });
 builder.Services.AddControllers(opt =>
 {
-    opt.Filters.Add(new AuthorizeFilter(requireAuthorizePolicy)); //kullanýcýyý giriþþe zorladýk
+    opt.Filters.Add(new AuthorizeFilter(requireAuthorizePolicy)); 
 });
 //this new lines end
 
-
-builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

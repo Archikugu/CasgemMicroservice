@@ -17,6 +17,7 @@ namespace CasgemMicroservice.IdentityServer
                     new ApiResource("resource_basket"){Scopes = {"basket_fullpermission"}},
                         new ApiResource("resource_discount"){Scopes = {"discount_fullpermission"}},
                              new ApiResource("resource_order"){Scopes = {"order_fullpermission"}},
+                                 new ApiResource("resource_cargo"){Scopes = {"cargo_fullpermission"}},
                         new ApiResource(IdentityServerConstants.LocalApi.ScopeName)
         };
         public static IEnumerable<IdentityResource> IdentityResources =>
@@ -35,6 +36,7 @@ namespace CasgemMicroservice.IdentityServer
                         new ApiScope("basket_fullpermission", "Sepet İşlemleri İçin Tam Erişim"),
                             new ApiScope("discount_fullpermission", "İndirim İşlemleri İçin Tam Erişim"),
                                   new ApiScope("order_fullpermission", "Sipariş İşlemleri İçin Tam Erişim"),
+                                     new ApiScope("cargo_fullpermission", "Kargo İşlemleri İçin Tam Erişim"),
                             new ApiScope(IdentityServerConstants.LocalApi.ScopeName)
             };
 
@@ -62,7 +64,7 @@ namespace CasgemMicroservice.IdentityServer
                     AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
 
                     AllowOfflineAccess = true,
-                    AllowedScopes = { "catalog_fullpermission", "basket_fullpermission", "photoStock_fullpermission", "discount_fullpermission", "order_fullpermission",
+                    AllowedScopes = { "catalog_fullpermission", "basket_fullpermission", "photoStock_fullpermission", "discount_fullpermission", "order_fullpermission","cargo_fullpermission",
                         IdentityServerConstants.LocalApi.ScopeName,
                         IdentityServerConstants.StandardScopes.Email,
                         IdentityServerConstants.StandardScopes.OpenId,

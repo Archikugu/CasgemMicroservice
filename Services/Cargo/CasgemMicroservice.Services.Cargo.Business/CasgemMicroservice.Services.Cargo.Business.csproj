@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CasgemMicroservice.Services.Cargo.DataAccess\CasgemMicroservice.Services.Cargo.DataAccess.csproj" />
+    <ProjectReference Include="..\CasgemMicroservice.Services.Cargo.Entities\CasgemMicroservice.Services.Cargo.Entities.csproj" />
+  </ItemGroup>
+
 </Project>
